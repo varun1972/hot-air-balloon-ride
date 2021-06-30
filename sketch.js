@@ -27,18 +27,22 @@ function draw() {
 
   if(keyDown(LEFT_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.x=balloon.x-1;
     //write code to move air balloon in left direction
   }
   else if(keyDown(RIGHT_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.x=balloon.x+1;
     //write code to move air balloon in right direction
   }
   else if(keyDown(UP_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.y=balloon.y-1;
     //write code to move air balloon in up direction
   }
   else if(keyDown(DOWN_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    balloon.y=balloon.y+1;
     //write code to move air balloon in down direction
   }
 
